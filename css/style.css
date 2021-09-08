@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-color: #bcbcbcc5;
+}
+
+.main-title {
+    font-size: 3em;
+    text-align: center;
+    background-color: rgb(204, 88, 179);
+    color: rgb(88, 204, 127);
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.board {
+    display: grid;
+    background-color: #005493;
+    grid-template-columns: repeat(7, 14.29%);
+    grid-template-rows: repeat(6, 110px);
+    width: 90%;
+    height: 660px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 2%;
+}
+
+.disc {
+    background-color: white;
+    border-radius: 50%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+}
+
+#reset {
+    height: 60px;
+    width: 65px;
+    margin: 20px 10px 20px 20px;
+    background-image: url("../img/Reset\ Symbol.png");
+    background-color: rgba(30, 185, 232, 1);
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: rgba(30, 185, 232, 0.6);
+}
+
+.volume {
+    height: 60px;
+    width: 65px;
+    margin: 20px 20px 20px 10px;
+    cursor: pointer;
+}
+
+#volume-on {
+    background-image: url("../img/Unmute\ Symbol.png");
+    background-color: rgba(30, 232, 30, 1);
+}
+
+#volume-on:hover {
+    background-color: rgba(30, 232, 30, 0.6);
+}
+
+#volume-off {
+    background-image: url("../img/Mute\ Symbol.png");
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#volume-off:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.timer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#min {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    border-right: none;
+    background: linear-gradient(to right, yellow, orange);
+}
+
+#sec {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    border-left: none;
+    background: linear-gradient(to right, orange, red);
+}
+
+.score-container {
+    display: flex;
+    border: 5px solid orange;
+    border-radius: 5%;
+    margin: 30px auto;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    justify-content: center;
+}
+
+#player1-title {
+    position: absolute;
+    top: 35%;
+    left: -15%;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: yellow;
+}
+
+#player2-title {
+    position: absolute;
+    top: 35%;
+    right: -15%;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+#score {
+    position: absolute;
+    top: 25%;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
